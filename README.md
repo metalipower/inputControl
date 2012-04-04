@@ -13,5 +13,6 @@ This example accept only letters lowercase, uppercase and space:
       <input type="text" onkeypress="inputControl.init(event, {element: this, chars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz '})"  />
 
 ####ATTENTION: 
+
 Some chars require a backslash to escape.
 
