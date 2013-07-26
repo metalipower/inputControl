@@ -9,12 +9,10 @@ InputControl is a powerfull script to controlling own input text to accept speci
 ####How to use:
 
 This example accept only numbers:
-
-     <input type="text" onkeypress="inputControl.init(event, {element: this, chars: '0123456789'})"  />
+	 <input type="text" data-restrict="0123456789"/>
 
 This example accept only letters lowercase, uppercase and space:
-
-      <input type="text" onkeypress="inputControl.init(event, {element: this, chars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz '})"  />
+	 <input type="text" data-restrict="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"/>
 
 ####ATTENTION: 
 
