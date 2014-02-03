@@ -5,7 +5,9 @@ window.onload = function () {
 }
 
 function onKeyPress(event) {
-    var restrict = event.target.getAttribute("data-restrict");
+    if (!event) event = window.event;
+    var target = event.target ? event.target : event.srcElement;
+    var restrict = target.getAttribute("data-restrict");
     if(restrict){
         inputControl.init(event, {element: this, chars: restrict});
     }
